@@ -1,0 +1,1 @@
+This is the README file for my front-end JavaScript calculator, built for the Odin Project. This project is built using HTML, CSS and JavaScript. To follow this project's development, see the project spec file.

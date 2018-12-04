@@ -2,13 +2,15 @@ button {
 
 }
 #body-container {
-
+    width: 360px;
+    height: 640px;
 }
 #buttons-container {
 
 }
 #display-container {
-
+    width: 340px;
+    height: 40px;
 }
 .btn {
 
@@ -17,5 +19,5 @@ button {
 
 }
 .operator {
-    
+
 }

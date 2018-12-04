@@ -6,7 +6,8 @@ button {
     height: 640px;
 }
 #buttons-container {
-
+    width: 360px;
+    height: 600px;
 }
 #display-container {
     width: 340px;

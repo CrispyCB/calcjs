@@ -11,9 +11,14 @@ button {
     height: 600px;
     columns: 3;
 }
+#display {
+    width: 292px;
+    height: 67px;
+}
 #display-container {
     width: 340px;
     height: 40px;
+    margin: 0 auto;
 }
 .btn {
 

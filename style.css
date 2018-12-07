@@ -1,5 +1,6 @@
 button {
-
+    width: 82px;
+    height: 82px;
 }
 #body-container {
     width: 360px;
@@ -8,6 +9,7 @@ button {
 #buttons-container {
     width: 360px;
     height: 600px;
+    columns: 3;
 }
 #display-container {
     width: 340px;

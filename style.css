@@ -15,6 +15,7 @@ button {
 #display {
     width: 292px;
     height: 67px;
+    background-color: #300924;
 }
 #display-container {
     width: 340px;

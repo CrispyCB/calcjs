@@ -7,13 +7,14 @@ button {
     height: 640px;
 }
 #buttons-container {
-    width: 360px;
+    width: 100%;
     height: 600px;
     columns: 3;
     margin-top: 12%;
+    margin-left: 4%;
 }
 #display {
-    width: 292px;
+    width: 100%;
     height: 67px;
     background-color: #300924;
 }

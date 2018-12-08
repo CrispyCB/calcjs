@@ -1,6 +1,6 @@
 button {
-    width: 82px;
-    height: 82px;
+    width: 75px;
+    height: 75px;
 }
 #body-container {
     width: 360px;
@@ -36,6 +36,7 @@ button {
     border-radius: 50%;
     outline: none;
     color: white;
+    margin: 5%;
 }
 .number {
     background-color: #080705;

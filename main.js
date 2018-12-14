@@ -11,3 +11,12 @@ numbers.forEach(function(number){
     })
 })
 console.log(equation);
+
+//clear all items from array
+let clearOne = document.getElementById("clear-entry");
+clearOne.addEventListener('click', function(){
+    equation.pop();
+    const display = document.getElementById("display");
+    display.innerText = "";
+})
+console.log(equation);

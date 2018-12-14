@@ -12,7 +12,7 @@ numbers.forEach(function(number){
 })
 console.log(equation);
 
-//clear all items from array
+//clear last item from array
 let clearOne = document.getElementById("clear-entry");
 clearOne.addEventListener('click', function(){
     equation.pop();

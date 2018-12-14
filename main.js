@@ -2,12 +2,12 @@
 let equation = [];
 
 //push numbers to equation array and display
-let numbers = document.getElementsByClassName("number");
-for (var i = 0; i < numbers.length; i++) {
-    numbers[i].addEventListener('click', function(){
-        equation.push(numbers.dataset.num);
-        const display = this.document.getElementById("display");
-        display.innerText = `${numbers.dataset.num}`;
+let numbers = document.querySelectorAll(".number");
+numbers.forEach(function(number){
+    number.addEventListener('click', function(){
+        equation.push(number.dataset.num);
+        const display = document.getElementById("display");
+        display.innerText = `${number.dataset.num}`;
     })
-};
+})
 console.log(equation);

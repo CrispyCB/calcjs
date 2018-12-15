@@ -1,7 +1,32 @@
-//declare global let variable and constant operation functions.
+//declares global let variable and constant operation functions.
 let operation;
 
-const multiply = (a,b) => {return a * b;}
-const divide = (a,b) => {return a / b;}
-const add = (a,b) => {return a + b;}
-const subtract = (a,b) => {return a - b;}
+const multiply = (a,b) => {return a = a * b, b = "";}
+const divide = (a,b) => {return a = a / b, b = "";}
+const add = (a,b) => {return a = a + b, b= "";}
+const subtract = (a,b) => {return a = a - b, b = "";}
+
+//declares operation button assignments.
+const multiplybtn = document.getElementById("multiply");
+const dividebtn = document.getElementById("divide");
+const addbtn = document.getElementById("add");
+const subtractbtn = document.getElementById("subtract");
+
+multiplybtn.addEventListener('click', function(){
+    operation = multiply;
+})
+
+dividebtn.addEventListener('click', function(){
+    operation = divide;
+})
+
+addbtn.addEventListener('click', function(){
+    operation = add;
+})
+
+subtractbtn.addEventListener('click', function(){
+    operation = subtract;
+})
+
+
+

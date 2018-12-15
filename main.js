@@ -1,11 +1,15 @@
-//declares global let variables and constant operation functions.
+//declares global let variables.
 let a = "";
 let b = "";
 let operation;
 
+//declares display assignment.
+const display = document.getElementById("display");
+
+// declares constant operation functions.
 const multiply = (a,b) => {return a = a * b, b = "";}
 const divide = (a,b) => {return a = a / b, b = "";}
-const add = (a,b) => {return a = a + b, b= "";}
+const add = (a,b) => {return a = a + b, b = "";}
 const subtract = (a,b) => {return a = a - b, b = "";}
 
 //declares operation button assignments.
@@ -52,7 +56,6 @@ clearAll.addEventListener('click', function(){
 //declares number button assignments.
 let numbers = document.querySelectorAll(".number");
 numbers.forEach(number => number.addEventListener('click', function(){
-    const display = document.getElementById("display");
     display.innerText = number.dataset.num;
     if (a === ""){
         a = number.dataset.num;

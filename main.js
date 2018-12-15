@@ -45,6 +45,8 @@ clearEntry.addEventListener('click', function(){
         b = "";
     }
 })
-
+clearAll.addEventListener('click', function(){
+    return a = "", b = "";
+})
 
 

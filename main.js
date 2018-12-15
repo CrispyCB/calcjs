@@ -7,10 +7,30 @@ let operation;
 const display = document.getElementById("display");
 
 // declares constant operation functions.
-const multiply = (a,b) => {return a = a * b, b = "";}
-const divide = (a,b) => {return a = a / b, b = "";}
-const add = (a,b) => {return a = a + b, b = "";}
-const subtract = (a,b) => {return a = a - b, b = "";}
+const multiply = (a,b) => {
+    a = a * b;
+    b = "";
+    display.innerText = a;
+    return a;
+}
+const divide = (a,b) => {
+    a = a / b;
+    b = "";
+    display.innerText = a;
+    return a;
+}
+const add = (a,b) => {
+    a = a + b;
+    b = "";
+    display.innerText = a;
+    return a;
+}
+const subtract = (a,b) => {
+    a = a - b;
+    b = "";
+    display.innerText = a;
+    return a;
+}
 
 //declares operation button assignments.
 const multiplybtn = document.getElementById("multiply");

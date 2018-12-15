@@ -49,4 +49,16 @@ clearAll.addEventListener('click', function(){
     return a = "", b = "";
 })
 
+//declares number button assignments.
+let numbers = document.querySelectorAll(".number");
+numbers.addEventListener('click', function(){
+    const display = document.getElementById("display");
+    display.innerText = numbers.dataset.num;
+    if (a = ""){
+        a = numbers.dataset.num;
+    }
+    else if (b = ""){
+        b = numbers.dataset.num;
+    }
+})
 

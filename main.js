@@ -51,14 +51,15 @@ clearAll.addEventListener('click', function(){
 
 //declares number button assignments.
 let numbers = document.querySelectorAll(".number");
-numbers.addEventListener('click', function(){
+numbers.forEach(number => number.addEventListener('click', function(){
     const display = document.getElementById("display");
-    display.innerText = numbers.dataset.num;
+    display.innerText = number.dataset.num;
     if (a = ""){
-        a = numbers.dataset.num;
+        let a = number.dataset.num;
+        return a;
     }
     else if (b = ""){
-        b = numbers.dataset.num;
+       let b = number.dataset.num;
+       return b;
     }
-})
-
+}))

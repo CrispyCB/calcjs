@@ -1,4 +1,6 @@
-//declares global let variable and constant operation functions.
+//declares global let variables and constant operation functions.
+let a;
+let b;
 let operation;
 
 const multiply = (a,b) => {return a = a * b, b = "";}
@@ -12,6 +14,8 @@ const dividebtn = document.getElementById("divide");
 const addbtn = document.getElementById("add");
 const subtractbtn = document.getElementById("subtract");
 const equals = document.getElementById("equals");
+const clearEntry = document.getElementById("clear-entry");
+const clearAll = document.getElementById("clear-all");
 
 multiplybtn.addEventListener('click', function(){
     operation = multiply;
@@ -31,6 +35,15 @@ subtractbtn.addEventListener('click', function(){
 
 equals.addEventListener('click', function() {
     return operation;
+})
+
+clearEntry.addEventListener('click', function(){
+    if (a != ""){
+        a = "";
+    }
+    else if (b != ""){
+        b = "";
+    }
 })
 
 

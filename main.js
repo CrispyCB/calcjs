@@ -11,6 +11,7 @@ const multiplybtn = document.getElementById("multiply");
 const dividebtn = document.getElementById("divide");
 const addbtn = document.getElementById("add");
 const subtractbtn = document.getElementById("subtract");
+const equals = document.getElementById("equals");
 
 multiplybtn.addEventListener('click', function(){
     operation = multiply;
@@ -26,6 +27,10 @@ addbtn.addEventListener('click', function(){
 
 subtractbtn.addEventListener('click', function(){
     operation = subtract;
+})
+
+equals.addEventListener('click', function() {
+    return operation;
 })
 
 

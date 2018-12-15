@@ -1,6 +1,6 @@
 //declares global let variables and constant operation functions.
-let a;
-let b;
+let a = "";
+let b = "";
 let operation;
 
 const multiply = (a,b) => {return a = a * b, b = "";}
@@ -54,12 +54,14 @@ let numbers = document.querySelectorAll(".number");
 numbers.forEach(number => number.addEventListener('click', function(){
     const display = document.getElementById("display");
     display.innerText = number.dataset.num;
-    if (a = ""){
-        let a = number.dataset.num;
+    if (a === ""){
+        a = number.dataset.num;
+        console.log(a);
         return a;
     }
-    else if (b = ""){
-       let b = number.dataset.num;
+    else if (b === ""){
+       b = number.dataset.num;
+       console.log(b);
        return b;
     }
 }))

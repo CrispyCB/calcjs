@@ -58,7 +58,7 @@ subtractbtn.addEventListener('click', function(){
 })
 
 equals.addEventListener('click', function() {
-    return operation;
+    return operation(Number(a),Number(b));
 })
 
 clearEntry.addEventListener('click', function(){
@@ -76,14 +76,14 @@ clearAll.addEventListener('click', function(){
 //declares number button assignments.
 let numbers = document.querySelectorAll(".number");
 numbers.forEach(number => number.addEventListener('click', function(){
-    display.innerText = number.dataset.num;
+    display.innerText = Number(number.dataset.num);
     if (a === ""){
-        a = number.dataset.num;
+        a = Number(number.dataset.num);
         console.log(a);
         return a;
     }
     else if (b === ""){
-       b = number.dataset.num;
+       b = Number(number.dataset.num);
        console.log(b);
        return b;
     }

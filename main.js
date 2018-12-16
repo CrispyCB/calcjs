@@ -9,25 +9,25 @@ const display = document.getElementById("display");
 
 // declares constant operation functions.
 const multiply = (a,b) => {
-    a = a * b;
+    a = Number(a) * Number(b);
     b = "";
     display.innerText = a;
     return a;
 }
 const divide = (a,b) => {
-    a = a / b;
+    a = Number(a) / Number(b);
     b = "";
     display.innerText = a;
     return a;
 }
 const add = (a,b) => {
-    a = a + b;
+    a = Number(a) + Number(b);
     b = "";
     display.innerText = a;
     return a;
 }
 const subtract = (a,b) => {
-    a = a - b;
+    a = Number(a) - Number(b);
     b = "";
     display.innerText = a;
     return a;
@@ -88,9 +88,9 @@ let numbers = document.querySelectorAll(".number");
 numbers.forEach(number => number.addEventListener('click', function(event){ //Find out what was clicked
     display.innerText += event.target.value; // appends to string
     if (isFirstNumber){
-        a + parseInt(event.target.value);
+        a += event.target.value;
         }
     else {
-       b + parseInt(event.target.value);
+       b += event.target.value;
     }
 }))

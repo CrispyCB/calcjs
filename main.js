@@ -74,13 +74,17 @@ equals.addEventListener('click', function() {
 clearEntry.addEventListener('click', function(){
     if (a != ""){
         a = "";
+        display.innerText = "";
     }
     else if (b != ""){
         b = "";
+        display.innerText = "";
     }
 })
 clearAll.addEventListener('click', function(){
-    return a = "", b = "";
+    a = "";
+    b = "";
+    display.innerText = "";
 })
 
 //declares number button assignments.

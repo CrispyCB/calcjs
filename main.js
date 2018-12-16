@@ -78,7 +78,7 @@ let numbers = document.querySelectorAll(".number");
 numbers.forEach(number => number.addEventListener('click', function(){
     display.innerText = number.value
     if (a === ""){
-        a = number.value
+        a = number.value;
         console.log(a);
         return a;
     }

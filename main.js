@@ -1,6 +1,7 @@
 //declares global let variables.
 let a = "";
 let b = "";
+let isFirstNumber = true; //checks if we're populating 'a'. if false, populates 'b'.
 let operation;
 
 //declares display assignment.
@@ -43,21 +44,30 @@ const clearAll = document.getElementById("clear-all");
 
 multiplybtn.addEventListener('click', function(){
     operation = multiply;
+    isFirstNumber = false;
+    display.innerText = "";
 })
 
 dividebtn.addEventListener('click', function(){
     operation = divide;
+    isFirstNumber = false;
+    display.innerText = "";
 })
 
 addbtn.addEventListener('click', function(){
     operation = add;
+    isFirstNumber = false;
+    display.innerText = "";
 })
 
 subtractbtn.addEventListener('click', function(){
     operation = subtract;
+    isFirstNumber = false;
+    display.innerText = "";
 })
 
 equals.addEventListener('click', function() {
+    isFirstNumber = true;
     return operation(Number(a),Number(b));
 })
 
@@ -75,16 +85,12 @@ clearAll.addEventListener('click', function(){
 
 //declares number button assignments.
 let numbers = document.querySelectorAll(".number");
-numbers.forEach(number => number.addEventListener('click', function(){
-    display.innerText = number.value
-    if (a === ""){
-        a += number.value;
-        console.log(a);
-        return a;
-    }
-    else if (b === ""){
-       b += number.value;
-       console.log(b);
-       return b;
+numbers.forEach(number => number.addEventListener('click', function(event){ //Find out what was clicked
+    display.innerText += event.target.value; // appends to string
+    if (isFirstNumber){
+        a + parseInt(event.target.value);
+        }
+    else {
+       b + parseInt(event.target.value);
     }
 }))

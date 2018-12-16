@@ -58,7 +58,7 @@ subtractbtn.addEventListener('click', function(){
 })
 
 equals.addEventListener('click', function() {
-    return operation(Number(a),Number(b));
+    return operation(a,b);
 })
 
 clearEntry.addEventListener('click', function(){

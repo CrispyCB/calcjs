@@ -76,14 +76,14 @@ clearAll.addEventListener('click', function(){
 //declares number button assignments.
 let numbers = document.querySelectorAll(".number");
 numbers.forEach(number => number.addEventListener('click', function(){
-    display.innerText = Number(number.dataset.num);
+    display.innerText = number.value;
     if (a === ""){
-        a = Number(number.dataset.num);
+        a = number.value;
         console.log(a);
         return a;
     }
     else if (b === ""){
-       b = Number(number.dataset.num);
+       b = number.value;
        console.log(b);
        return b;
     }

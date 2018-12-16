@@ -88,9 +88,9 @@ let numbers = document.querySelectorAll(".number");
 numbers.forEach(number => number.addEventListener('click', function(event){ //Find out what was clicked
     display.innerText += event.target.value; // appends to string
     if (isFirstNumber){
-        a += event.target.value;
+        a = Number(a) + Number(event.target.value);
         }
     else {
-       b += event.target.value;
+       b = Number(b) + Number(event.target.value);
     }
 }))

@@ -44,29 +44,33 @@ const clearAll = document.getElementById("clear-all");
 
 multiplybtn.addEventListener('click', function(){
     operation = multiply;
-    isFirstNumber = false;
+    a = display.innerText;
     display.innerText = "";
 })
 
 dividebtn.addEventListener('click', function(){
     operation = divide;
+    a = display.innerText;
     isFirstNumber = false;
     display.innerText = "";
 })
 
 addbtn.addEventListener('click', function(){
     operation = add;
+    a = display.innerText;
     isFirstNumber = false;
     display.innerText = "";
 })
 
 subtractbtn.addEventListener('click', function(){
     operation = subtract;
+    a = display.innerText;
     isFirstNumber = false;
     display.innerText = "";
 })
 
 equals.addEventListener('click', function() {
+    b = display.innerText;
     isFirstNumber = true;
     return operation(Number(a),Number(b));
 })
@@ -91,10 +95,10 @@ clearAll.addEventListener('click', function(){
 let numbers = document.querySelectorAll(".number");
 numbers.forEach(number => number.addEventListener('click', function(event){ //Find out what was clicked
     display.innerText += event.target.value; // appends to string
-    if (isFirstNumber){
-        a = Number(a) + Number(event.target.value);
-        }
-    else {
-       b = Number(b) + Number(event.target.value);
-    }
+    // if (isFirstNumber){
+    //     a = Number(a) + Number(event.target.value);
+    //     }
+    // else {
+    //    b = Number(b) + Number(event.target.value);
+    // }
 }))

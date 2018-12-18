@@ -94,11 +94,5 @@ clearAll.addEventListener('click', function(){
 //declares number button assignments.
 let numbers = document.querySelectorAll(".number");
 numbers.forEach(number => number.addEventListener('click', function(event){ //Find out what was clicked
-    display.innerText += event.target.value; // appends to string
-    // if (isFirstNumber){
-    //     a = Number(a) + Number(event.target.value);
-    //     }
-    // else {
-    //    b = Number(b) + Number(event.target.value);
-    // }
+    display.innerText += event.target.value; // appends to strings
 }))

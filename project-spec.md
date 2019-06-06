@@ -2,11 +2,11 @@ This is the project specification file for my JavaScript calculator. It lists al
 
 ASSIGNED 2018-11-27
 
-- [ ] Build HTML front-end.
-- [ ] Style with CSS.
-- [ ] Add client-side JS.
-    - [ ] Define addition function.
-    - [ ] Define subtraction function.
-    - [ ] Define multiplication function.
-    - [ ] Define division function.
+- [x] Build HTML front-end.
+- [x] Style with CSS.
+- [x] Add client-side JS.
+    - [x] Define addition function.
+    - [x] Define subtraction function.
+    - [x] Define multiplication function.
+    - [x] Define division function.
     
